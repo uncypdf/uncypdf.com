@@ -4,8 +4,13 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://uncypdf.com"),
-  title: "uncy.pdf",
-  description: "unnecessary product design format",
+  title: "uncy.pdf | hardwood furniture, woodworking",
+  description: "hardwood furniture, woodworking",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -20,7 +25,6 @@ export default function RootLayout({
           src="https://www.googletagmanager.com/gtag/js?id=G-8DJDK2WBSR"
           strategy="afterInteractive"
         />
-
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -30,7 +34,6 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-
       <body>{children}</body>
     </html>
   );
