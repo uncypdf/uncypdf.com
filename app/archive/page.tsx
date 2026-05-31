@@ -67,7 +67,7 @@ export default function ArchivePage() {
               {work.category}
             </div>
 
-            <div className="relative mx-auto aspect-[16/10] w-full max-w-3xl overflow-hidden rounded-md bg-neutral-300 md:max-w-4xl">
+            <div className="relative mx-auto aspect-[3/4] w-full max-w-[420px] overflow-hidden rounded-md bg-neutral-300">
               <Image
                 src={work.image}
                 alt={work.title}
