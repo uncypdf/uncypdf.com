@@ -7,10 +7,6 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <main className="min-h-screen w-full overflow-x-hidden bg-[#171716] p-[10px] text-white md:p-3">
-      <div className="pb-3 pt-1 text-center text-[16px] font-semibold leading-[1.4] text-neutral-400 md:pb-5 md:pt-2 md:text-sm">
-        unnecessary product design format |
-        <br className="md:hidden" /> uncy.pdf
-      </div>
 
       <section className="relative h-[640px] w-full overflow-hidden rounded-md bg-[#009B46] md:h-[760px]">
         <nav className="absolute left-1/2 top-[10px] z-20 flex -translate-x-1/2 gap-2 text-[18px] font-bold text-black md:top-3 md:text-lg">
