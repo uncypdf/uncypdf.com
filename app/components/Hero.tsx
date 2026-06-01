@@ -36,16 +36,18 @@ export default function Hero() {
           animate={{
             y: [0, -12, 0],
             rotate: [0, -1.5, 0],
+            scale: [1, 1.015, 1],
           }}
           whileHover={{
-            scale: 1.05,
-            rotate: -3,
-            y: -18,
+            scale: 1.03,
+            rotate: -2,
+            y: -8,
           }}
           whileTap={{ scale: 0.98 }}
           transition={{
-            duration: 6,
+            duration: 8,
             repeat: Infinity,
+            repeatType: "mirror",
             ease: "easeInOut",
           }}
           className="absolute left-1/2 top-[105px] h-[430px] w-[560px] -translate-x-1/2 md:top-[20px] md:h-[720px] md:w-[820px]"
