@@ -45,40 +45,45 @@ export default function ArchivePage() {
         </h1>
 
         <p className="mx-auto mt-8 max-w-xl text-center text-[18px] font-semibold leading-[1.2] md:text-[24px]">
-          hardwood furniture, woodworking, objects and experiments.
+          hardwood furniture, objects and experiments.
         </p>
       </section>
 
-      <section className="py-3">
-        {works.map((work) => (
-          <Link
-            key={work.title}
-            href={work.href}
-            className="group mx-auto block max-w-5xl border-t border-neutral-800 py-10 first:border-t-0 md:py-14"
-          >
-            <div className="mb-4 flex items-end justify-between text-neutral-400">
-              <h2 className="text-[34px] font-black leading-none tracking-[-0.06em] md:text-[72px]">
-                {work.title}
-              </h2>
-              <span className="text-sm font-semibold">{work.year}</span>
-            </div>
+      <section className="py-10">
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2">
+          {works.map((work) => (
+            <Link
+              key={work.title}
+              href={work.href}
+              className="group block"
+            >
+              <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-neutral-300">
+                <Image
+                  src={work.image}
+                  alt={work.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                />
+              </div>
 
-            <div className="mb-6 text-[12px] uppercase tracking-[0.2em] text-neutral-500">
-              {work.category}
-            </div>
+              <div className="mt-3">
+                <h2 className="text-[26px] font-black tracking-[-0.04em]">
+                  {work.title}
+                </h2>
 
-            <div className="relative mx-auto aspect-[3/4] w-full max-w-[420px] overflow-hidden rounded-md bg-neutral-300">
-              <Image
-                src={work.image}
-                alt={work.title}
-                fill
-                className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-              />
-            </div>
-          </Link>
-        ))}
+                <div className="mt-1 text-[11px] uppercase tracking-[0.15em] text-neutral-500">
+                  {work.category.split("/")[0]}
+                </div>
+
+                <div className="mt-1 text-[12px] text-neutral-400">
+                  {work.year}
+                </div>
+              </div>
+            </Link>
+          ))}
+        </div>
       </section>
-    <Footer />
+      <Footer />
     </main>
   );
 }
