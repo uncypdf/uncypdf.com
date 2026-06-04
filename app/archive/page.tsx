@@ -40,11 +40,11 @@ export default function ArchivePage() {
 
               <div className="mt-3">
                 <h2 className="text-[26px] font-black tracking-[-0.04em]">
-                  {work.title}
+                  {work.slug}
                 </h2>
 
                 <div className="mt-1 text-[11px] uppercase tracking-[0.15em] text-neutral-500">
-                  {work.category.split("/")[0]}
+                  {(work.category ?? "").split("/")[0]}
                 </div>
 
                 <div className="mt-1 text-[12px] text-neutral-400">
