@@ -5,30 +5,30 @@ import Footer from "../components/Footer";
 
 const works = [
   {
-    title: "the pyramid ",
+    title: "pyramid ",
     year: "2025",
     category: "coffee table/cherry wood & plywood",
     image: "/archive/1.png",
     href: "/archive/project-01",
   },
   {
-    title: "the cupholder",
+    title: "cupholder",
     year: "2025",
     category: "furniture/walnut wood & aluminum",
     image: "/archive/2.png",
     href: "/archive/project-02",
   },
   {
-    title: "the flower vase",
+    title: "flower vase",
     year: "2026",
     category: "vase/ginkgo wood",
     image: "/archive/3.png",
     href: "/archive/project-03",
   },
   {
-    title: "the bookmark",
+    title: "bookstand",
     year: "2025",
-    category: "bookmark/cherry wood",
+    category: "furniture/cherry wood",
     image: "/archive/4.png",
     href: "/archive/project-04",
   },
