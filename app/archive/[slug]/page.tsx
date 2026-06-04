@@ -116,6 +116,24 @@ export default async function ProjectPage({
                 details, references, and production context.
               </p>
             </div>
+
+            <div className="rounded-md border border-neutral-800 p-5 md:p-7">
+              <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
+                Instagram Reel
+              </div>
+
+              <div className="overflow-hidden rounded-md border border-neutral-800">
+                <iframe
+                  src="https://www.instagram.com/reel/DH0eb4mP1fq/embed"
+                  width="100%"
+                  height="740"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency={true}
+                  className="w-full"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
