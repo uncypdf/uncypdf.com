@@ -151,7 +151,7 @@ export default function Hero() {
             <a href="#" target="_blank">
               YouTube
             </a>
-            <a href="mailto:hello@uncypdf.com">Email</a>
+            <a href="mailto:info@uncypdf.com">Email</a>
           </div>
         </div>
 
