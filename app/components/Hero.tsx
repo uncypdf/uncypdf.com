@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 
 export default function Hero() {
   const [isPointerActive, setIsPointerActive] = useState(false);
+  const studioImages: string[] = [];
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -46,7 +47,7 @@ export default function Hero() {
     <main className="min-h-screen w-full overflow-x-hidden bg-[#171716] p-[10px] text-white md:p-3">
 
       <section
-        className="relative h-[640px] w-full overflow-hidden rounded-md bg-[#009B46] md:h-[760px]"
+        className="relative h-[1140px] w-full overflow-hidden rounded-md bg-[#009B46] md:h-[1260px]"
         onMouseEnter={() => setIsPointerActive(true)}
         onMouseLeave={() => {
           setIsPointerActive(false);
@@ -104,6 +105,24 @@ export default function Hero() {
           />
         </motion.div>
       </section>
+
+      {studioImages.length > 0 && (
+        <section className="grid gap-3 py-3 md:grid-cols-2">
+          {studioImages.map((src, index) => (
+            <div
+              key={src}
+              className="relative aspect-[4/3] overflow-hidden rounded-md bg-neutral-900"
+            >
+              <Image
+                src={src}
+                alt={`uncy.pdf studio product ${index + 1}`}
+                fill
+                className="object-cover"
+              />
+            </div>
+          ))}
+        </section>
+      )}
 
       <footer className="relative h-[360px] bg-[#171716] md:h-[420px]">
         <h1 className="absolute left-2 top-5 text-[70px] font-black leading-[0.78] tracking-[-0.08em] text-neutral-100 md:left-3 md:top-20 md:text-[148px]">
