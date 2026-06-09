@@ -11,12 +11,12 @@ export default function Hero() {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-10, 10]), {
+  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-15, 15]), {
     stiffness: 120,
     damping: 20,
   });
 
-  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [10, -10]), {
+  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [15, -15]), {
     stiffness: 120,
     damping: 20,
   });
@@ -92,18 +92,7 @@ export default function Hero() {
             rotateY,
             transformPerspective: 1200,
           }}
-          animate={{
-            y: [0, -12, 0],
-            rotate: [0, -1.5, 0],
-            scale: [1, 1.015, 1],
-          }}
           whileTap={{ scale: 0.98 }}
-          transition={{
-            duration: 8,
-            repeat: Infinity,
-            repeatType: "mirror",
-            ease: "easeInOut",
-          }}
           className="absolute left-1/2 top-[105px] h-[430px] w-[560px] -translate-x-1/2 md:top-[20px] md:h-[720px] md:w-[820px]"
         >
           <Image
