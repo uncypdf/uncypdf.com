@@ -64,23 +64,23 @@ export default function Hero() {
           mouseY.set(y);
         }}
       >
-        <nav className="absolute left-1/2 top-8 z-20 flex -translate-x-1/2 gap-3 text-[18px] font-bold text-black md:top-3 md:gap-2 md:text-lg">
+        <nav className="absolute left-1/2 top-8 z-20 flex -translate-x-1/2 gap-2 text-[18px] font-black text-black md:top-3 md:text-lg">
           <Link
-            className="bg-[#ff5a00] px-4 py-3 translate-y-0 scale-100 rotate-[-2deg] shadow-[0_18px_40px_rgba(0,0,0,0.35)] transition-all duration-300 md:translate-y-0 md:scale-100 md:rotate-0 md:shadow-none md:hover:-translate-y-[6px] md:hover:scale-110 md:hover:rotate-[-2deg] md:hover:shadow-[0_18px_40px_rgba(0,0,0,0.35)] active:scale-95 md:px-4 md:py-3"
+            className="bg-[#ff5a00] px-3 py-2 transition-all duration-300 md:translate-y-0 md:scale-100 md:rotate-0 md:shadow-none md:hover:-translate-y-[6px] md:hover:scale-110 md:hover:rotate-[-2deg] md:hover:shadow-[0_18px_40px_rgba(0,0,0,0.35)] active:scale-95 md:px-4 md:py-3"
             href="/"
           >
             Home
           </Link>
 
           <Link
-            className="rounded-full bg-[#18bf45] px-4 py-3 translate-y-0 scale-100 rotate-[-1deg] shadow-[0_18px_40px_rgba(0,0,0,0.35)] transition-all duration-300 md:translate-y-0 md:scale-100 md:rotate-0 md:shadow-none md:hover:-translate-y-[6px] md:hover:scale-110 md:hover:rotate-[-2deg] md:hover:shadow-[0_18px_40px_rgba(0,0,0,0.35)] active:scale-95 md:px-4 md:py-3"
+            className="rounded-full bg-[#18bf45] px-3 py-2 transition-all duration-300 md:translate-y-0 md:scale-100 md:rotate-0 md:shadow-none md:hover:-translate-y-[6px] md:hover:scale-110 md:hover:rotate-[-2deg] md:hover:shadow-[0_18px_40px_rgba(0,0,0,0.35)] active:scale-95 md:px-4 md:py-3"
             href="/archive"
           >
             Archive
           </Link>
 
           <Link
-            className="rounded-md bg-[#9ec4f6] px-4 py-3 translate-y-0 scale-100 rotate-[1deg] shadow-[0_18px_40px_rgba(0,0,0,0.35)] transition-all duration-300 md:translate-y-0 md:scale-100 md:rotate-0 md:shadow-none md:hover:-translate-y-[6px] md:hover:scale-110 md:hover:rotate-[-2deg] md:hover:shadow-[0_18px_40px_rgba(0,0,0,0.35)] active:scale-95 md:px-4 md:py-3"
+            className="rounded-md bg-[#9ec4f6] px-3 py-2 transition-all duration-300 md:translate-y-0 md:scale-100 md:rotate-0 md:shadow-none md:hover:-translate-y-[6px] md:hover:scale-110 md:hover:rotate-[-2deg] md:hover:shadow-[0_18px_40px_rgba(0,0,0,0.35)] active:scale-95 md:px-4 md:py-3"
             href="/about"
           >
             About
