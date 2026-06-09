@@ -22,10 +22,28 @@ export default function Hero() {
     damping: 20,
   });
 
+  const requestMotionPermission = async () => {
+    if (typeof window === "undefined") return;
+
+    const DeviceOrientation = DeviceOrientationEvent as unknown as {
+      requestPermission?: () => Promise<PermissionState>;
+    };
+
+    if (typeof DeviceOrientation.requestPermission === "function") {
+      try {
+        const permission = await DeviceOrientation.requestPermission();
+
+        if (permission !== "granted") {
+          return;
+        }
+      } catch {
+        // Ignore permission errors; non-iOS browsers do not need this.
+      }
+    }
+  };
+
   useEffect(() => {
     const handleOrientation = (event: DeviceOrientationEvent) => {
-      if (isPointerActive) return;
-
       const gamma = event.gamma ?? 0;
       const beta = event.beta ?? 45;
 
@@ -47,7 +65,10 @@ export default function Hero() {
     <main className="min-h-screen w-full overflow-x-hidden bg-[#171716] p-[10px] text-white md:p-3">
 
       <section
-        className="relative h-[800px] w-full overflow-hidden rounded-md bg-[#009B46] md:h-[1000px]"
+        className="relative h-[700px] w-full overflow-hidden rounded-md bg-[#009B46] md:h-[1000px]"
+        onPointerDown={requestMotionPermission}
+        onClick={requestMotionPermission}
+        onTouchStart={requestMotionPermission}
         onMouseEnter={() => setIsPointerActive(true)}
         onMouseLeave={() => {
           setIsPointerActive(false);
@@ -59,6 +80,17 @@ export default function Hero() {
           const rect = e.currentTarget.getBoundingClientRect();
           const x = (e.clientX - rect.left) / rect.width - 0.5;
           const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+          mouseX.set(x);
+          mouseY.set(y);
+        }}
+        onTouchMove={(e) => {
+          const touch = e.touches[0];
+          if (!touch) return;
+
+          const rect = e.currentTarget.getBoundingClientRect();
+          const x = (touch.clientX - rect.left) / rect.width - 0.5;
+          const y = (touch.clientY - rect.top) / rect.height - 0.5;
 
           mouseX.set(x);
           mouseY.set(y);
