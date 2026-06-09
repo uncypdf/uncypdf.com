@@ -3,36 +3,58 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isPointerActive, setIsPointerActive] = useState(false);
 
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
-  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-6, 6]), {
+  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-10, 10]), {
     stiffness: 120,
     damping: 20,
   });
 
-  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [6, -6]), {
+  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [10, -10]), {
     stiffness: 120,
     damping: 20,
   });
+
+  useEffect(() => {
+    const handleOrientation = (event: DeviceOrientationEvent) => {
+      if (isPointerActive) return;
+
+      const gamma = event.gamma ?? 0;
+      const beta = event.beta ?? 45;
+
+      const x = Math.max(-0.5, Math.min(0.5, gamma / 45));
+      const y = Math.max(-0.5, Math.min(0.5, (beta - 45) / 45));
+
+      mouseX.set(x);
+      mouseY.set(y);
+    };
+
+    window.addEventListener("deviceorientation", handleOrientation);
+
+    return () => {
+      window.removeEventListener("deviceorientation", handleOrientation);
+    };
+  }, [isPointerActive, mouseX, mouseY]);
 
   return (
     <main className="min-h-screen w-full overflow-x-hidden bg-[#171716] p-[10px] text-white md:p-3">
 
       <section
         className="relative h-[640px] w-full overflow-hidden rounded-md bg-[#009B46] md:h-[760px]"
-        onMouseEnter={() => setIsDesktop(true)}
+        onMouseEnter={() => setIsPointerActive(true)}
         onMouseLeave={() => {
-          setIsDesktop(false);
+          setIsPointerActive(false);
           mouseX.set(0);
           mouseY.set(0);
         }}
         onMouseMove={(e) => {
+          setIsPointerActive(true);
           const rect = e.currentTarget.getBoundingClientRect();
           const x = (e.clientX - rect.left) / rect.width - 0.5;
           const y = (e.clientY - rect.top) / rect.height - 0.5;
@@ -66,19 +88,14 @@ export default function Hero() {
 
         <motion.div
           style={{
-            rotateX: isDesktop ? rotateX : 0,
-            rotateY: isDesktop ? rotateY : 0,
+            rotateX,
+            rotateY,
             transformPerspective: 1200,
           }}
           animate={{
             y: [0, -12, 0],
             rotate: [0, -1.5, 0],
             scale: [1, 1.015, 1],
-          }}
-          whileHover={{
-            scale: 1.03,
-            rotate: -2,
-            y: -8,
           }}
           whileTap={{ scale: 0.98 }}
           transition={{
