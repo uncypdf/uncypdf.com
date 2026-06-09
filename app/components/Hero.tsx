@@ -126,7 +126,7 @@ export default function Hero() {
             transformPerspective: 1200,
           }}
           whileTap={{ scale: 0.98 }}
-          className="absolute left-1/2 top-[105px] h-[430px] w-[560px] -translate-x-1/2 md:top-[20px] md:h-[720px] md:w-[820px]"
+          className="absolute left-1/2 top-[140px] h-[500px] w-[620px] -translate-x-1/2 md:top-[20px] md:h-[720px] md:w-[820px]"
         >
           <Image
             src="/main_mo3.png"
@@ -156,12 +156,12 @@ export default function Hero() {
         </section>
       )}
 
-      <footer className="relative h-[360px] bg-[#171716] md:h-[420px]">
+      <footer className="relative h-[420px] bg-[#171716] md:h-[420px]">
         <h1 className="absolute left-2 top-5 text-[70px] font-black leading-[0.78] tracking-[-0.08em] text-neutral-100 md:left-3 md:top-20 md:text-[148px]">
           uncy.pdf
         </h1>
 
-        <div className="absolute left-2 top-[140px] md:bottom-48 md:left-auto md:right-56 md:top-auto md:text-right">
+        <div className="absolute left-2 top-[170px] md:bottom-48 md:left-auto md:right-56 md:top-auto md:text-right">
           <div className="mb-2 inline-block rounded-full border border-neutral-300 px-2 py-[1px] text-[10px] uppercase">
             Links
           </div>
@@ -172,7 +172,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="absolute right-10 top-[140px] text-left md:bottom-48 md:right-3 md:top-auto md:text-right">
+        <div className="absolute right-6 top-[170px] text-left md:bottom-48 md:right-3 md:top-auto md:text-right">
           <div className="mb-2 inline-block rounded-full border border-neutral-300 px-2 py-[1px] text-[10px] uppercase">
             Connect
           </div>
