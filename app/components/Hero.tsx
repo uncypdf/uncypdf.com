@@ -2,13 +2,45 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { useState } from "react";
 
 export default function Hero() {
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-6, 6]), {
+    stiffness: 120,
+    damping: 20,
+  });
+
+  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [6, -6]), {
+    stiffness: 120,
+    damping: 20,
+  });
+
   return (
     <main className="min-h-screen w-full overflow-x-hidden bg-[#171716] p-[10px] text-white md:p-3">
 
-      <section className="relative h-[640px] w-full overflow-hidden rounded-md bg-[#009B46] md:h-[760px]">
+      <section
+        className="relative h-[640px] w-full overflow-hidden rounded-md bg-[#009B46] md:h-[760px]"
+        onMouseEnter={() => setIsDesktop(true)}
+        onMouseLeave={() => {
+          setIsDesktop(false);
+          mouseX.set(0);
+          mouseY.set(0);
+        }}
+        onMouseMove={(e) => {
+          const rect = e.currentTarget.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+          mouseX.set(x);
+          mouseY.set(y);
+        }}
+      >
         <nav className="absolute left-1/2 top-[10px] z-20 flex -translate-x-1/2 gap-2 text-[18px] font-bold text-black md:top-3 md:text-lg">
           <Link
             className="bg-[#ff5a00] px-3 py-2 translate-y-[-6px] scale-110 rotate-[-2deg] shadow-[0_18px_40px_rgba(0,0,0,0.35)] transition-all duration-300 md:translate-y-0 md:scale-100 md:rotate-0 md:shadow-none md:hover:-translate-y-[6px] md:hover:scale-110 md:hover:rotate-[-2deg] md:hover:shadow-[0_18px_40px_rgba(0,0,0,0.35)] active:scale-95 md:px-4 md:py-3"
@@ -33,6 +65,11 @@ export default function Hero() {
         </nav>
 
         <motion.div
+          style={{
+            rotateX: isDesktop ? rotateX : 0,
+            rotateY: isDesktop ? rotateY : 0,
+            transformPerspective: 1200,
+          }}
           animate={{
             y: [0, -12, 0],
             rotate: [0, -1.5, 0],
