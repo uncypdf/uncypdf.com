@@ -11,9 +11,11 @@ export default function AboutPage() {
           About
         </h1>
 
-        <p className="mt-8 max-w-2xl text-[18px] font-semibold leading-[1.2] md:text-[28px]">
-          uncy.pdf is a woodworking and furniture project focused on
-          unnecessary but meaningful objects.
+        <p className="mt-8 max-w-3xl text-[18px] font-semibold leading-[1.25] md:text-[28px]">
+          uncy.pdf는 불필요하지만 의미 있는 오브제를 만드는 가구 및 목공 프로젝트입니다.
+          <br />
+          <br />
+          uncy.pdf is a furniture and woodworking practice focused on creating unnecessary but meaningful objects.
         </p>
       </section>
 
@@ -24,10 +26,17 @@ export default function AboutPage() {
               Philosophy
             </div>
 
-            <p className="text-[22px] leading-[1.3] md:text-[32px]">
-              We explore furniture, objects and experiments that do not
-              necessarily solve problems, but create new ways of seeing,
-              using and living.
+            <p className="text-[20px] leading-[1.45] md:text-[30px]">
+              우리는 문제를 해결하기 위한 제품보다 새로운 시선과 경험을 만드는 물건에 관심이 있습니다.
+              <br />
+              <br />
+              가구, 오브제, 그리고 실험적인 프로젝트를 통해 기능과 조형의 경계를 탐구합니다.
+              <br />
+              <br />
+              We are interested in objects that create new perspectives and experiences rather than simply solving problems.
+              <br />
+              <br />
+              Through furniture, objects, and experimental projects, we explore the boundary between utility and form.
             </p>
           </div>
 
@@ -47,7 +56,12 @@ export default function AboutPage() {
 
               <br />
 
-              <a href="mailto:hello@uncypdf.com">hello@uncypdf.com</a>
+              <a href="mailto:info@uncypdf.com">info@uncypdf.com</a>
+              <p className="mt-6 text-[14px] no-underline text-neutral-500 md:text-[16px]">
+                커미션, 협업, 제작 문의를 환영합니다.
+                <br />
+                Commissions, collaborations and custom inquiries are welcome.
+              </p>
             </div>
           </div>
         </div>
