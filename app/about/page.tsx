@@ -12,9 +12,9 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-10 max-w-2xl text-[16px] font-medium leading-[1.35] tracking-[-0.02em] md:text-[36px]">
-          uncy.pdf는 불필요하지만 갖고 싶은 제품을 만듭니다. 
+          불필요하지만 갖고 싶은 제품을 만듭니다. 
           <br />
-          uncy.pdf creates products that are unnecessary, yet desirable.
+          We creates products that are unnecessary, yet desirable.
           <br />
         </p>
       </section>
