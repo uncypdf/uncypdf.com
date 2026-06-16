@@ -12,10 +12,10 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-8 max-w-3xl text-[18px] font-semibold leading-[1.25] md:text-[28px]">
-          uncy.pdf는 불필요하지만 의미 있는 오브제를 만드는 가구 및 목공 프로젝트입니다.
+          uncy.pdf creates products that are unnecessary, yet desirable.
           <br />
           <br />
-          uncy.pdf is a furniture and woodworking practice focused on creating unnecessary but meaningful objects.
+          Furniture, objects, and experiments focused on the aesthetics of things.
         </p>
       </section>
 
@@ -27,16 +27,35 @@ export default function AboutPage() {
             </div>
 
             <p className="text-[20px] leading-[1.45] md:text-[30px]">
-              우리는 문제를 해결하기 위한 제품보다 새로운 시선과 경험을 만드는 물건에 관심이 있습니다.
+              uncy.pdf는 불필요하지만 갖고 싶은 제품을 만듭니다.
               <br />
               <br />
-              가구, 오브제, 그리고 실험적인 프로젝트를 통해 기능과 조형의 경계를 탐구합니다.
+              우리는 물건의 쓸모를 기능만으로 판단하지 않습니다. 어떤 물건이 의미 있는지, 아름다운지, 혹은 곁에 두고 싶은지는 결국 사용하는 사람이 결정한다고 믿습니다.
               <br />
               <br />
-              We are interested in objects that create new perspectives and experiences rather than simply solving problems.
+              uncy.pdf는 쓸모와 무쓸모의 경계를 구분하기보다, 물건이 가진 본연의 미학에 집중합니다.
               <br />
               <br />
-              Through furniture, objects, and experimental projects, we explore the boundary between utility and form.
+              기능을 위해 형태를 만드는 것이 아니라, 형태가 주는 경험과 감각을 탐구합니다.
+              <br />
+              <br />
+              우리의 가구와 오브제는 누군가에겐 실용적이고, 누군가에겐 불필요하지만, 언제나 갖고 싶은 물건이기를 바랍니다.
+              <br />
+              <br />
+              <br />
+              uncy.pdf creates products that are unnecessary, yet desirable.
+              <br />
+              <br />
+              We do not believe the value of an object can be defined by function alone. Whether something is meaningful, beautiful, or worth keeping close is ultimately decided by the person who lives with it.
+              <br />
+              <br />
+              Rather than drawing a line between usefulness and uselessness, uncy.pdf focuses on the intrinsic aesthetics of objects.
+              <br />
+              <br />
+              We are interested in the experiences and emotions that form can create.
+              <br />
+              <br />
+              Our furniture and objects may be practical to some and unnecessary to others, but they are always intended to be things worth wanting.
             </p>
           </div>
 
