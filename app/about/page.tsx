@@ -11,7 +11,7 @@ export default function AboutPage() {
           About
         </h1>
 
-        <p className="mt-8 max-w-3xl text-[18px] font-semibold leading-[1.25] md:text-[28px]">
+        <p className="mt-8 max-w-3xl text-[14px] font-semibold leading-[1.25] md:text-[28px]">
           uncy.pdf는 불필요하지만 갖고 싶은 제품을 만듭니다. 
           <br />
           uncy.pdf creates products that are unnecessary, yet desirable.
@@ -23,10 +23,10 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-2">
           <div>
             <div className="mb-4 text-[12px] uppercase tracking-[0.2em] text-neutral-500">
-              Philosophy
+              about uncy.pdf
             </div>
 
-            <p className="text-[20px] leading-[1.45] md:text-[30px]">
+            <p className="text-[14px] leading-[1.45] md:text-[30px]">
               우리는 물건의 쓸모를 기능만으로 판단하지 않습니다. 어떤 물건이 의미 있는지, 아름다운지, 혹은 곁에 두고 싶은지는 결국 사용하는 사람이 결정한다고 믿습니다.
               <br />
               <br />
