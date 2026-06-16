@@ -12,10 +12,10 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-8 max-w-3xl text-[18px] font-semibold leading-[1.25] md:text-[28px]">
+          uncy.pdf는 불필요하지만 갖고 싶은 제품을 만듭니다. 
+          <br />
           uncy.pdf creates products that are unnecessary, yet desirable.
           <br />
-          <br />
-          Furniture, objects, and experiments focused on the aesthetics of things.
         </p>
       </section>
 
@@ -27,9 +27,6 @@ export default function AboutPage() {
             </div>
 
             <p className="text-[20px] leading-[1.45] md:text-[30px]">
-              uncy.pdf는 불필요하지만 갖고 싶은 제품을 만듭니다.
-              <br />
-              <br />
               우리는 물건의 쓸모를 기능만으로 판단하지 않습니다. 어떤 물건이 의미 있는지, 아름다운지, 혹은 곁에 두고 싶은지는 결국 사용하는 사람이 결정한다고 믿습니다.
               <br />
               <br />
@@ -42,8 +39,6 @@ export default function AboutPage() {
               우리의 가구와 오브제는 누군가에겐 실용적이고, 누군가에겐 불필요하지만, 언제나 갖고 싶은 물건이기를 바랍니다.
               <br />
               <br />
-              <br />
-              uncy.pdf creates products that are unnecessary, yet desirable.
               <br />
               <br />
               We do not believe the value of an object can be defined by function alone. Whether something is meaningful, beautiful, or worth keeping close is ultimately decided by the person who lives with it.
@@ -77,9 +72,9 @@ export default function AboutPage() {
 
               <a href="mailto:info@uncypdf.com">info@uncypdf.com</a>
               <p className="mt-6 text-[14px] no-underline text-neutral-500 md:text-[16px]">
-                커미션, 협업, 제작 문의를 환영합니다.
+                커미션, 협업, 제작 문의
                 <br />
-                Commissions, collaborations and custom inquiries are welcome.
+                Commissions, collaborations and custom inquiries
               </p>
             </div>
           </div>
