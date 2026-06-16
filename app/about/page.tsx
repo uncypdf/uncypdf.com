@@ -11,7 +11,7 @@ export default function AboutPage() {
           About
         </h1>
 
-        <p className="mt-8 max-w-3xl text-[14px] font-semibold leading-[1.25] md:text-[28px]">
+        <p className="mt-10 max-w-2xl text-[16px] font-medium leading-[1.35] tracking-[-0.02em] md:text-[36px]">
           uncy.pdf는 불필요하지만 갖고 싶은 제품을 만듭니다. 
           <br />
           uncy.pdf creates products that are unnecessary, yet desirable.
@@ -23,10 +23,10 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-2">
           <div>
             <div className="mb-4 text-[12px] uppercase tracking-[0.2em] text-neutral-500">
-              about uncy.pdf
+              Philosophy
             </div>
 
-            <p className="text-[14px] leading-[1.45] md:text-[30px]">
+            <p className="max-w-3xl text-[15px] leading-[1.8] tracking-[-0.01em] text-neutral-200 md:text-[22px] md:leading-[1.9]">
               우리는 물건의 쓸모를 기능만으로 판단하지 않습니다. 어떤 물건이 의미 있는지, 아름다운지, 혹은 곁에 두고 싶은지는 결국 사용하는 사람이 결정한다고 믿습니다.
               <br />
               <br />
@@ -55,11 +55,11 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <div className="mb-4 text-[12px] uppercase tracking-[0.2em] text-neutral-500">
+            <div className="mb-6 text-[12px] uppercase tracking-[0.24em] text-neutral-500">
               Contact
             </div>
 
-            <div className="space-y-2 text-[18px] underline md:text-[24px]">
+            <div className="space-y-3 text-[18px] underline underline-offset-4 md:text-[28px]">
               <a
                 href="https://www.instagram.com/uncy.pdf/"
                 target="_blank"
