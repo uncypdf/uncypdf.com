@@ -32,9 +32,15 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-black/55" />
 
           <div className="relative z-10 mx-auto flex min-h-[900px] max-w-6xl items-center px-6 py-16 md:min-h-[1100px] md:px-12">
-            <div className="max-w-4xl">
+            <div className="grid w-full gap-12 md:grid-cols-[220px_1fr] md:gap-20">
+              <div>
+                <div className="text-[12px] uppercase tracking-[0.24em] text-neutral-400">
+                  Philosophy
+                </div>
+              </div>
 
-              <p className="text-[20px] leading-[1.8] tracking-[-0.02em] text-white md:text-[36px] md:leading-[1.75]">
+              <div className="max-w-3xl">
+                <p className="text-[15px] leading-[1.9] tracking-[-0.01em] text-white md:text-[18px] md:leading-[2]">
                 우리는 물건의 쓸모를 기능만으로 판단하지 않습니다. 어떤 물건이 의미 있는지, 아름다운지, 혹은 곁에 두고 싶은지는 결국 사용하는 사람이 결정한다고 믿습니다.
                 <br />
                 <br />
@@ -58,7 +64,8 @@ export default function AboutPage() {
                 <br />
                 <br />
                 Our furniture and objects may be practical to some and unnecessary to others, but they are always intended to be things worth wanting.
-              </p>
+                </p>
+              </div>
             </div>
           </div>
         </div>
