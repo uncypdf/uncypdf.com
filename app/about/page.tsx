@@ -21,7 +21,7 @@ export default function AboutPage() {
       </section>
 
       <section className="relative mt-[10px] overflow-hidden rounded-md">
-        <div className="relative min-h-[900px] md:min-h-[1100px]">
+        <div className="relative min-h-[700px] md:min-h-[800px]">
           <Image
             src="/archive/1.png"
             alt="Pyramid"
@@ -31,15 +31,9 @@ export default function AboutPage() {
 
           <div className="absolute inset-0 bg-black/55" />
 
-          <div className="relative z-10 mx-auto flex min-h-[900px] max-w-6xl items-center px-6 py-16 md:min-h-[1100px] md:px-12">
-            <div className="grid w-full gap-12 md:grid-cols-[220px_1fr] md:gap-20">
-              <div>
-                <div className="text-[12px] uppercase tracking-[0.24em] text-neutral-400">
-                  Philosophy
-                </div>
-              </div>
-
-              <div className="max-w-3xl">
+          <div className="relative z-10 mx-auto flex min-h-[700px] max-w-6xl items-center px-6 py-16 md:min-h-[800px] md:px-12">
+            <div className="grid w-full md:grid-cols-2 md:gap-20">
+              <div className="md:col-start-2 max-w-3xl">
                 <p className="text-[15px] leading-[1.9] tracking-[-0.01em] text-white md:text-[18px] md:leading-[2]">
                 우리는 물건의 쓸모를 기능만으로 판단하지 않습니다. 어떤 물건이 의미 있는지, 아름다운지, 혹은 곁에 두고 싶은지는 결국 사용하는 사람이 결정한다고 믿습니다.
                 <br />
