@@ -18,8 +18,8 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-5xl py-20">
-        <div className="grid gap-12 md:grid-cols-2">
+      <section className="mx-auto max-w-5xl px-4 py-20 md:px-0">
+        <div className="grid gap-12 md:grid-cols-2 md:gap-20">
           <div>
             <p className="max-w-3xl text-[15px] leading-[1.8] tracking-[-0.01em] text-neutral-200 md:text-[22px] md:leading-[1.9]">
               uncy.pdf는 쓸모와 무쓸모를 구분하지 않습니다.
