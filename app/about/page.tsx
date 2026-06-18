@@ -54,11 +54,7 @@ export default function AboutPage() {
 
               <a href="mailto:info@uncypdf.com">info@uncypdf.com</a>
 
-              <p className="mt-6 text-[14px] no-underline text-neutral-500 md:text-[16px]">
-                커미션, 협업, 제작 문의
-                <br />
-                Commissions, collaborations and custom inquiries
-              </p>
+              
             </div>
           </div>
         </div>
