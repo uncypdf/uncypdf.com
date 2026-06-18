@@ -123,13 +123,12 @@ export default function CollectionPage() {
       <section className="rounded-md bg-[#009B46] px-4 py-4 text-black md:px-6 md:py-6">
         <Header />
 
-        <h1 className="mx-auto max-w-5xl text-center text-[72px] font-black leading-[0.82] tracking-[-0.08em] md:text-[180px]">
+        <h1 className="max-w-5xl text-[72px] font-black leading-[0.82] tracking-[-0.08em] md:text-[180px]">
           Collection
         </h1>
 
-        <p className="mx-auto mt-8 max-w-xl text-center text-[18px] font-semibold leading-[1.2] md:text-[24px]">
+        <p className="mt-10 max-w-2xl text-[16px] font-medium leading-[1.35] tracking-[-0.02em] md:text-[36px]">
           hardwood furniture, objects and experiments.
-
         </p>
       </section>
 
