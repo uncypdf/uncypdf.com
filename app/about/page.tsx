@@ -22,14 +22,14 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-2">
           <div>
             <p className="max-w-3xl text-[15px] leading-[1.8] tracking-[-0.01em] text-neutral-200 md:text-[22px] md:leading-[1.9]">
-              uncy.pdf는 쓸모와 무쓸모의 경계를 구분하기보다, 물건을 소유하고 싶은 본연의 욕구에 집중합니다.
+              uncy.pdf는 쓸모와 무쓸모를 구분하지 않습니다.
               <br />
               <br />
-              우리는 언제나 갖고 싶은 물건을 만듭니다.
+              언제나 갖고 싶은 물건을 만듭니다.
               <br />
               <br />
               <br />
-              Rather than drawing a line between usefulness and uselessness, uncy.pdf focuses on the fundamental desire to own objects.
+              uncy.pdf does not distinguish between usefulness and uselessness.
               <br />
               <br />
               We create things worth wanting.
