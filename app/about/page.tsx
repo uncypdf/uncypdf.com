@@ -18,7 +18,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-5xl px-4 py-20 md:px-0">
+      <section className="px-4 py-20 md:px-6">
         <div className="grid gap-12 md:grid-cols-2 md:gap-20">
           <div>
             <p className="max-w-3xl text-[15px] leading-[1.8] tracking-[-0.01em] text-neutral-200 md:text-[22px] md:leading-[1.9]">
