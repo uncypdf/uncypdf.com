@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-2 md:gap-20">
           <div>
             <p className="max-w-3xl text-[15px] leading-[1.8] tracking-[-0.01em] text-neutral-200 md:text-[22px] md:leading-[1.9]">
-              uncy.pdf는 쓸모와 무쓸모를 구분하지 않습니다.
+              uncy.pdf는 쓸모와 무쓸모를 구분하지 않고
               <br />
               <br />
               언제나 갖고 싶은 물건을 만듭니다.

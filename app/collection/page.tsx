@@ -128,7 +128,8 @@ export default function CollectionPage() {
         </h1>
 
         <p className="mx-auto mt-8 max-w-xl text-center text-[18px] font-semibold leading-[1.2] md:text-[24px]">
-          A collection of furniture, objects and experiments.
+          hardwood furniture, objects and experiments.
+
         </p>
       </section>
 
