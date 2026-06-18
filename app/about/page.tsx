@@ -12,10 +12,9 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-10 max-w-2xl text-[16px] font-medium leading-[1.35] tracking-[-0.02em] md:text-[36px]">
-          불필요하지만 갖고 싶은 제품을 만듭니다. 
+          불필요하지만 갖고 싶은 제품을 만듭니다.
           <br />
-          We creates products that are unnecessary, yet desirable.
-          <br />
+          We create products that are unnecessary, yet desirable.
         </p>
       </section>
 
@@ -23,29 +22,17 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-2">
           <div>
             <p className="max-w-3xl text-[15px] leading-[1.8] tracking-[-0.01em] text-neutral-200 md:text-[22px] md:leading-[1.9]">
-              우리는 물건의 쓸모를 기능만으로 판단하지 않습니다. 어떤 물건이 의미 있는지, 아름다운지, 혹은 곁에 두고 싶은지는 결국 사용하는 사람이 결정한다고 믿습니다.
+              uncy.pdf는 쓸모와 무쓸모의 경계를 구분하기보다, 물건을 소유하고 싶은 본연의 욕구에 집중합니다.
               <br />
               <br />
-              uncy.pdf는 쓸모와 무쓸모의 경계를 구분하기보다, 물건이 가진 본연의 미학에 집중합니다.
-              <br />
-              <br />
-              기능을 위해 형태를 만드는 것이 아니라, 형태가 주는 경험과 감각을 탐구합니다.
-              <br />
-              <br />
-              우리의 가구와 오브제는 누군가에겐 실용적이고, 누군가에겐 불필요하지만, 언제나 갖고 싶은 물건이기를 바랍니다.
+              우리는 언제나 갖고 싶은 물건을 만듭니다.
               <br />
               <br />
               <br />
-              We do not believe the value of an object can be defined by function alone. Whether something is meaningful, beautiful, or worth keeping close is ultimately decided by the person who lives with it.
+              Rather than drawing a line between usefulness and uselessness, uncy.pdf focuses on the fundamental desire to own objects.
               <br />
               <br />
-              Rather than drawing a line between usefulness and uselessness, uncy.pdf focuses on the intrinsic aesthetics of objects.
-              <br />
-              <br />
-              We are interested in the experiences and emotions that form can create.
-              <br />
-              <br />
-              Our furniture and objects may be practical to some and unnecessary to others, but they are always intended to be things worth wanting.
+              We create things worth wanting.
             </p>
           </div>
 
