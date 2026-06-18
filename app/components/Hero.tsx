@@ -106,9 +106,9 @@ export default function Hero() {
 
           <Link
             className="rounded-full bg-[#18bf45] px-3 py-2 transition-all duration-300 md:translate-y-0 md:scale-100 md:rotate-0 md:shadow-none md:hover:-translate-y-[6px] md:hover:scale-110 md:hover:rotate-[-2deg] md:hover:shadow-[0_18px_40px_rgba(0,0,0,0.35)] active:scale-95 md:px-4 md:py-3"
-            href="/archive"
+            href="/collection"
           >
-            Archive
+            Collection
           </Link>
 
           <Link
@@ -167,7 +167,7 @@ export default function Hero() {
           </div>
           <div className="flex flex-col text-[17px] leading-6 underline md:text-xl md:leading-7">
             <Link href="/">Home</Link>
-            <Link href="/archive">Archive</Link>
+            <Link href="/collection">Collection</Link>
             <Link href="/about">About</Link>
           </div>
         </div>
