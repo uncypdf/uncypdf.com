@@ -58,8 +58,8 @@ export default async function ProjectPage({
 
       <section className="mx-auto max-w-6xl py-12 md:py-20">
         <div className="grid gap-10 md:grid-cols-[0.72fr_1.28fr] md:items-start">
-          <aside className="order-2 md:order-1 md:sticky md:top-8">
-            <div className="mb-10 border-b border-neutral-800 pb-8">
+          <aside className="contents md:order-1 md:block md:sticky md:top-8">
+            <div className="order-4 mb-10 border-b border-neutral-800 pb-8 md:order-none">
               <div className="mb-6">
                 <div className="mb-2 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
                   Overview
@@ -117,7 +117,7 @@ export default async function ProjectPage({
               </div>
             </div>
 
-            <div className="rounded-md border border-neutral-800 p-5 md:p-7">
+            <div className="order-7 rounded-md border border-neutral-800 p-5 md:order-none md:p-7">
               <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
                 Request Information
               </div>
@@ -149,33 +149,19 @@ export default async function ProjectPage({
               </div>
             </div>
 
-            <div className="mt-10 border-t border-neutral-800 pt-6">
+            <div className="order-8 mt-10 border-t border-neutral-800 pt-6 md:order-none">
               <Link href="/collection" className="text-[17px] underline">
                 Back to Collection
               </Link>
             </div>
           </aside>
 
-          <div className="order-1 grid gap-4 md:order-2">
-            <ProductGallery title={project.title} images={galleryImages} />
-
-            <div className="rounded-md border border-neutral-800 p-5 md:p-7">
-              <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
-                Details
-              </div>
-              <p className="max-w-2xl text-[16px] leading-[1.6] text-neutral-300 md:text-[18px]">
-                원목과 금속의 대비를 중심으로 제작한 오브제형 컵홀더입니다.
-                <br />
-                작은 가구처럼 사용할 수 있도록 비례와 안정감을 함께 고려했습니다.
-                <br />
-                <br />
-                This cupholder is designed as a small furniture-like object built around the contrast between wood and metal.
-                <br />
-                Its proportions and balance are considered so that it functions as both an everyday holder and a sculptural object.
-              </p>
+          <div className="contents md:order-2 md:grid md:gap-4">
+            <div className="order-1 md:order-none">
+              <ProductGallery title={project.title} images={galleryImages} />
             </div>
 
-            <div className="rounded-md border border-neutral-800 p-5 md:p-7">
+            <div className="order-2 rounded-md border border-neutral-800 p-5 md:order-none md:p-7">
               <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
                 Availability
               </div>
@@ -185,7 +171,7 @@ export default async function ProjectPage({
               </p>
             </div>
 
-            <div className="rounded-md border border-neutral-800 p-5 md:p-7">
+            <div className="order-3 rounded-md border border-neutral-800 p-5 md:order-none md:p-7">
               <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
               </div>
 
@@ -199,6 +185,22 @@ export default async function ProjectPage({
                   className="h-[560px] w-full md:h-[740px]"
                 />
               </div>
+            </div>
+
+            <div className="order-6 rounded-md border border-neutral-800 p-5 md:order-none md:p-7">
+              <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
+                Details
+              </div>
+              <p className="max-w-2xl text-[16px] leading-[1.6] text-neutral-300 md:text-[18px]">
+                원목과 금속의 대비를 중심으로 제작한 오브제형 컵홀더입니다.
+                <br />
+                작은 가구처럼 사용할 수 있도록 비례와 안정감을 함께 고려했습니다.
+                <br />
+                <br />
+                This cupholder is designed as a small furniture-like object built around the contrast between wood and metal.
+                <br />
+                Its proportions and balance are considered so that it functions as both an everyday holder and a sculptural object.
+              </p>
             </div>
           </div>
         </div>
