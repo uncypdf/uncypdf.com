@@ -137,7 +137,7 @@ export default async function ProjectPage({
                   rel="noopener noreferrer"
                   className="rounded-md border border-neutral-700 px-4 py-2 transition hover:bg-neutral-100 hover:text-black"
                 >
-                  Instagram DM
+                  Direct Message
                 </a>
 
                 <a
@@ -192,14 +192,14 @@ export default async function ProjectPage({
                 Details
               </div>
               <p className="max-w-2xl text-[16px] leading-[1.6] text-neutral-300 md:text-[18px]">
-                원목과 금속의 대비를 중심으로 제작한 오브제형 컵홀더입니다.
+                원목과 금속의 대비를 중심으로 제작한 2way 컵홀더입니다.
                 <br />
-                작은 가구처럼 사용할 수 있도록 비례와 안정감을 함께 고려했습니다.
+                다양한 용도로 사용할 수 있도록 비례와 안정감을 함께 고려했습니다.
                 <br />
                 <br />
-                This cupholder is designed as a small furniture-like object built around the contrast between wood and metal.
+                This 2-way cupholder is built around the contrast between wood and metal.
                 <br />
-                Its proportions and balance are considered so that it functions as both an everyday holder and a sculptural object.
+                Its proportions and balance are designed to support a range of uses.
               </p>
             </div>
           </div>
