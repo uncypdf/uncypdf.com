@@ -187,7 +187,6 @@ export default async function ProjectPage({
 
             <div className="rounded-md border border-neutral-800 p-5 md:p-7">
               <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
-                Instagram Reel
               </div>
 
               <div className="overflow-hidden rounded-md border border-neutral-800">
