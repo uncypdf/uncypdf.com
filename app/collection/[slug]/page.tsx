@@ -25,13 +25,21 @@ export default async function ProjectPage({
     notFound();
   }
 
-  const galleryImages = [
-    project.thumbnail,
-    "/archive/1.png",
-    "/archive/2.png",
-    "/archive/3.png",
-    "/archive/4.png",
-  ];
+  const galleryImages =
+    slug === "cupholder"
+      ? [
+          "/collection/cupholder/01.png",
+          "/collection/cupholder/02.png",
+          "/collection/cupholder/03.png",
+          "/collection/cupholder/04.png",
+        ]
+      : [
+          project.thumbnail,
+          "/archive/1.png",
+          "/archive/2.png",
+          "/archive/3.png",
+          "/archive/4.png",
+        ];
 
   return (
     <main className="min-h-screen bg-[#171716] px-[10px] py-[10px] text-neutral-100 md:px-3 md:py-3">

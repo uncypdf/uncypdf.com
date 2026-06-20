@@ -8,18 +8,18 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 
 const works = [
   {
+    slug: "cupholder",
+    title: "cupholder",
+    year: "2025",
+    category: "furniture",
+    thumbnail: "/collection/cupholder/01.png",
+  },
+  {
     slug: "pyramid",
     title: "pyramid",
     year: "2025",
     category: "coffee table",
     thumbnail: "/archive/1.png",
-  },
-  {
-    slug: "cupholder",
-    title: "cupholder",
-    year: "2025",
-    category: "furniture",
-    thumbnail: "/archive/2.png",
   },
   {
     slug: "flower-vase",
