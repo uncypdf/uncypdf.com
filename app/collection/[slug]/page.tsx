@@ -109,27 +109,29 @@ export default async function ProjectPage({
           </aside>
 
           <div className="order-2 grid gap-4">
-            <div className="relative aspect-[3/4] overflow-hidden rounded-md bg-neutral-300 md:aspect-[4/3]">
+            <div className="relative overflow-hidden rounded-md bg-neutral-300">
               <Image
                 src={project.thumbnail}
                 alt={project.title}
-                fill
+                width={1200}
+                height={1600}
                 priority
-                className="object-cover"
+                className="h-auto w-full"
               />
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
               {galleryImages.slice(1).map((image, index) => (
                 <div
                   key={`${image}-${index}`}
-                  className="relative aspect-[4/3] overflow-hidden rounded-md bg-neutral-300"
+                  className="overflow-hidden rounded-md bg-neutral-300"
                 >
                   <Image
                     src={image}
                     alt={`${project.title} detail ${index + 1}`}
-                    fill
-                    className="object-cover"
+                    width={800}
+                    height={1067}
+                    className="h-auto w-full"
                   />
                 </div>
               ))}
