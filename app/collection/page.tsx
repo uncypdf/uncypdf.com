@@ -71,8 +71,14 @@ function CollectionCard({
     damping: 20,
   });
 
+  const isSoldOut = work.slug !== "cupholder";
+  const Wrapper = isSoldOut ? "div" : Link;
+  const wrapperProps = isSoldOut
+    ? { className: "group block cursor-not-allowed opacity-45" }
+    : { href: `/collection/${work.slug}`, className: "group block" };
+
   return (
-    <Link href={`/collection/${work.slug}`} className="group block">
+    <Wrapper {...wrapperProps}>
       <motion.div
         style={{
           rotateX,
@@ -109,10 +115,10 @@ function CollectionCard({
         </h2>
 
         <div className="mt-1 text-[11px] uppercase tracking-[0.15em] text-neutral-500">
-          Made to Order
+          {isSoldOut ? "Sold Out" : "Made to Order"}
         </div>
       </div>
-    </Link>
+    </Wrapper>
   );
 }
 
