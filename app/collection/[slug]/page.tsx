@@ -194,11 +194,10 @@ export default async function ProjectPage({
                 <iframe
                   src="https://www.instagram.com/reel/DZxULMwh8N4/embed"
                   width="100%"
-                  height="740"
                   frameBorder="0"
                   scrolling="no"
                   allowTransparency={true}
-                  className="w-full"
+                  className="h-[560px] w-full md:h-[740px]"
                 />
               </div>
             </div>
