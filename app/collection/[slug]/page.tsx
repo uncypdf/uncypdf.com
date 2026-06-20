@@ -65,7 +65,14 @@ export default async function ProjectPage({
                   Overview
                 </div>
                 <p className="text-[16px] leading-[1.6] text-neutral-300">
-                  A contemporary object exploring proportion, material, and utility.
+                  원목과 스테인리스 봉으로 만든 컵홀더.
+                  <br />
+                  소재와 사이즈는 커스텀 가능합니다.
+                  <br />
+                  <br />
+                  A cupholder made of solid wood and stainless steel rods.
+                  <br />
+                  Material and dimensions are available on request.
                 </p>
               </div>
 
@@ -86,16 +93,61 @@ export default async function ProjectPage({
 
                 <div className="grid grid-cols-[96px_1fr] gap-4">
                   <span className="text-neutral-500">Material</span>
-                  <span>Available on request</span>
+                  <span>
+                    wood — walnut / oak
+                    <br />
+                    leg — stainless / brass
+                    <br />
+                    (Available on request)
+                  </span>
                 </div>
 
                 <div className="grid grid-cols-[96px_1fr] gap-4">
                   <span className="text-neutral-500">Dimensions</span>
-                  <span>Available on request</span>
+                  <span>
+                    top diameter — 80mm / 175mm
+                    <br />
+                    bottom diameter — 200mm / 260mm
+                    <br />
+                    height — 530mm
+                    <br />
+                    (Available on request)
+                  </span>
                 </div>
               </div>
             </div>
 
+            <div className="rounded-md border border-neutral-800 p-5 md:p-7">
+              <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
+                Request Information
+              </div>
+
+              <p className="mb-3 text-[16px] leading-[1.6] text-neutral-300">
+                For commissions, availability, and custom inquiries.
+              </p>
+
+              <p className="mb-6 text-[14px] text-neutral-500">
+                Usually responds within 24 hours.
+              </p>
+
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://www.instagram.com/uncy.pdf/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-md border border-neutral-700 px-4 py-2 transition hover:bg-neutral-100 hover:text-black"
+                >
+                  Instagram DM
+                </a>
+
+                <a
+                  href="mailto:info@uncypdf.com"
+                  className="rounded-md border border-neutral-700 px-4 py-2 transition hover:bg-neutral-100 hover:text-black"
+                >
+                  Email
+                </a>
+              </div>
+            </div>
 
             <div className="mt-10 border-t border-neutral-800 pt-6">
               <Link href="/collection" className="text-[17px] underline">
@@ -138,9 +190,14 @@ export default async function ProjectPage({
                 Details
               </div>
               <p className="max-w-2xl text-[16px] leading-[1.6] text-neutral-300 md:text-[18px]">
-                This section is a temporary design note. Replace it later inside
-                the MDX content or project data with process notes, material
-                details, references, and production context.
+                원목과 금속의 대비를 중심으로 제작한 오브제형 컵홀더입니다.
+                <br />
+                작은 가구처럼 사용할 수 있도록 비례와 안정감을 함께 고려했습니다.
+                <br />
+                <br />
+                This cupholder is designed as a small furniture-like object built around the contrast between wood and metal.
+                <br />
+                Its proportions and balance are considered so that it functions as both an everyday holder and a sculptural object.
               </p>
             </div>
 
@@ -156,44 +213,12 @@ export default async function ProjectPage({
 
             <div className="rounded-md border border-neutral-800 p-5 md:p-7">
               <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
-                Request Information
-              </div>
-
-              <p className="mb-3 text-[16px] leading-[1.6] text-neutral-300">
-                For commissions, availability, and custom inquiries.
-              </p>
-
-              <p className="mb-6 text-[14px] text-neutral-500">
-                Usually responds within 24 hours.
-              </p>
-
-              <div className="flex flex-wrap gap-3">
-                <a
-                  href="https://www.instagram.com/uncy.pdf/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-md border border-neutral-700 px-4 py-2 transition hover:bg-neutral-100 hover:text-black"
-                >
-                  Instagram DM
-                </a>
-
-                <a
-                  href="mailto:info@uncypdf.com"
-                  className="rounded-md border border-neutral-700 px-4 py-2 transition hover:bg-neutral-100 hover:text-black"
-                >
-                  Email
-                </a>
-              </div>
-            </div>
-
-            <div className="rounded-md border border-neutral-800 p-5 md:p-7">
-              <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
                 Instagram Reel
               </div>
 
               <div className="overflow-hidden rounded-md border border-neutral-800">
                 <iframe
-                  src="https://www.instagram.com/reel/DH0eb4mP1fq/embed"
+                  src="https://www.instagram.com/reel/DZxULMwh8N4/embed"
                   width="100%"
                   height="740"
                   frameBorder="0"
