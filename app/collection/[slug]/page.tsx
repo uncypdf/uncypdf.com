@@ -1,9 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { getProjectBySlug, getProjectSlugs } from "@/lib/projects";
+import ProductGallery from "../../components/ProductGallery";
 
 export function generateStaticParams() {
   return getProjectSlugs().map((slug) => ({ slug }));
@@ -58,7 +58,7 @@ export default async function ProjectPage({
 
       <section className="mx-auto max-w-6xl py-12 md:py-20">
         <div className="grid gap-10 md:grid-cols-[0.72fr_1.28fr] md:items-start">
-          <aside className="order-1 md:sticky md:top-8">
+          <aside className="order-2 md:order-1 md:sticky md:top-8">
             <div className="mb-10 border-b border-neutral-800 pb-8">
               <div className="mb-6">
                 <div className="mb-2 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
@@ -156,34 +156,8 @@ export default async function ProjectPage({
             </div>
           </aside>
 
-          <div className="order-2 grid gap-4">
-            <div className="relative overflow-hidden rounded-md bg-neutral-300">
-              <Image
-                src={project.thumbnail}
-                alt={project.title}
-                width={1200}
-                height={1600}
-                priority
-                className="h-auto w-full"
-              />
-            </div>
-
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
-              {galleryImages.slice(1).map((image, index) => (
-                <div
-                  key={`${image}-${index}`}
-                  className="overflow-hidden rounded-md bg-neutral-300"
-                >
-                  <Image
-                    src={image}
-                    alt={`${project.title} detail ${index + 1}`}
-                    width={800}
-                    height={1067}
-                    className="h-auto w-full"
-                  />
-                </div>
-              ))}
-            </div>
+          <div className="order-1 grid gap-4 md:order-2">
+            <ProductGallery title={project.title} images={galleryImages} />
 
             <div className="rounded-md border border-neutral-800 p-5 md:p-7">
               <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
