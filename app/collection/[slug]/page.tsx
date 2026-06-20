@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MDXRemote } from "next-mdx-remote/rsc";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import { getProjectBySlug, getProjectSlugs } from "@/lib/projects";
@@ -97,9 +96,6 @@ export default async function ProjectPage({
               </div>
             </div>
 
-            <article className="prose prose-invert max-w-none prose-headings:font-black prose-headings:tracking-[-0.04em] prose-p:text-[17px] prose-p:leading-[1.55] prose-a:text-neutral-100 prose-a:underline prose-img:hidden md:prose-p:text-[19px]">
-              <MDXRemote source={project.content} />
-            </article>
 
             <div className="mt-10 border-t border-neutral-800 pt-6">
               <Link href="/collection" className="text-[17px] underline">
