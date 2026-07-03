@@ -194,7 +194,7 @@ export default async function ProjectPage({
               <p className="max-w-2xl text-[16px] leading-[1.6] text-neutral-300 md:text-[18px]">
                 원목과 금속의 대비를 중심으로 제작한 2way 컵홀더입니다.
                 <br />
-                다양한 용도로 사용할 수 있도록 비례와 안정감을 함께 고려했습니다.
+                다양한 용도로 사용할 수 있도록 비례와 안정감을 함께 고려해 제작되었습니다. 
                 <br />
                 <br />
                 This 2-way cupholder is built around the contrast between wood and metal.
