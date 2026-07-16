@@ -12,7 +12,7 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-10 max-w-2xl text-[16px] font-medium leading-[1.35] tracking-[-0.02em] md:text-[36px]">
-          꼭 필요하지 않지만 갖고 싶은 제품을 만듭니다.
+         UNCY.PDF
           <br />
           Unnecessary Product Design Format
         </p>
