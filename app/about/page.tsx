@@ -12,9 +12,9 @@ export default function AboutPage() {
         </h1>
 
         <p className="mt-10 max-w-2xl text-[16px] font-medium leading-[1.35] tracking-[-0.02em] md:text-[36px]">
-          불필요하지만 갖고 싶은 제품을 만듭니다.
+          꼭 필요하지 않지만 갖고 싶은 제품을 만듭니다.
           <br />
-          We create products that are unnecessary, yet desirable.
+          Unnecessary Product Design Format
         </p>
       </section>
 
@@ -22,13 +22,9 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-2 md:gap-20">
           <div>
             <p className="max-w-3xl text-[15px] leading-[1.8] tracking-[-0.01em] text-neutral-200 md:text-[22px] md:leading-[1.9]">
-              uncy.pdf는 쓸모와 무쓸모를 구분하지 않고
-              <br />
-              언제나 갖고 싶은 물건을 만듭니다.
+              uncy.pdf는 갖고싶은 물건을 만듭니다. 
               <br />
               <br />
-              <br />
-              uncy.pdf does not distinguish between usefulness and uselessness.
               <br />
               We create things worth wanting.
             </p>
