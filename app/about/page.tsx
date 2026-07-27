@@ -22,7 +22,7 @@ export default function AboutPage() {
         <div className="grid gap-12 md:grid-cols-2 md:gap-20">
           <div>
             <p className="max-w-3xl text-[15px] leading-[1.8] tracking-[-0.01em] text-neutral-200 md:text-[22px] md:leading-[1.9]">
-              uncy.pdf는 갖고싶은 물건을 만듭니다. 
+              Hardwood furniture, objects and experiments. 
               <br />
               <br />
               <br />
