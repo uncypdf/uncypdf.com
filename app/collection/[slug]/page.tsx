@@ -200,8 +200,8 @@ export default async function ProjectPage({
               </div>
               {details ? (
                 <div className="max-w-2xl space-y-5 text-[16px] leading-[1.6] text-neutral-300 md:text-[18px]">
-                  <p lang="ko">{details.details[0]}</p>
-                  <p lang="en">{details.details[1]}</p>
+                  <p lang="ko" className="whitespace-pre-line">{details.details[0]}</p>
+                  <p lang="en" className="whitespace-pre-line">{details.details[1]}</p>
                 </div>
               ) : (
               <p className="max-w-2xl text-[16px] leading-[1.6] text-neutral-300 md:text-[18px]">

@@ -24,8 +24,8 @@ export const productDetails: Record<string, ProductDetails> = {
       "A wooden vase made of ginkgo wood, bringing together the texture of timber and a softly curved form.",
     ],
     details: [
-      "한 송이의 꽃이나 작은 꽃 구성을 위한 화병입니다. 원목의 결, 질감, 자연스러운 색의 차이를 살려 실용적인 용기와 장식 오브제 사이에 놓이는 형태를 만들었습니다.",
-      "Designed for a single stem or a small arrangement, the vase emphasizes wood grain, texture, and natural color variation. It sits between a useful vessel and a decorative object.",
+      "오래된 바둑판으로 만든 목병입니다.\n고급 바둑판은 은행나무, 대추나무 등으로 만들어지는데요,\n예전엔 좋은 바둑판들이 많았지만 이제는 보기 힘들어졌습니다.",
+      "A wooden vase made from an old Go board.\nFine Go boards were made from woods such as ginkgo and jujube.\nQuality boards were once common, but they have become difficult to find.",
     ],
     material: "Ginkgo wood",
     images: ["/collection/green/3.jpg"],
