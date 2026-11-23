@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { productDetails } from "@/lib/product-details";
 import { notFound } from "next/navigation";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
@@ -24,21 +25,14 @@ export default async function ProjectPage({
     notFound();
   }
 
-  const galleryImages =
-    slug === "cupholder"
-      ? [
-          "/collection/cupholder/01.png",
-          "/collection/cupholder/02.png",
-          "/collection/cupholder/03.png",
-          "/collection/cupholder/04.png",
-        ]
-      : [
-          project.thumbnail,
-          "/archive/1.png",
-          "/archive/2.png",
-          "/archive/3.png",
-          "/archive/4.png",
-        ];
+  const details = productDetails[slug];
+  const availability = details ? "Sold Out" : "Made to Order";
+  const galleryImages = details?.images ?? [
+    "/collection/cupholder/01.png",
+    "/collection/cupholder/02.png",
+    "/collection/cupholder/03.png",
+    "/collection/cupholder/04.png",
+  ];
 
   return (
     <main className="min-h-screen bg-[#171716] px-[10px] py-[10px] text-neutral-100 md:px-3 md:py-3">
@@ -47,7 +41,7 @@ export default async function ProjectPage({
 
         <div className="mx-auto max-w-6xl">
           <div className="mb-4 text-[12px] uppercase tracking-[0.2em]">
-            Made to Order
+            {availability}
           </div>
 
           <h1 className="text-[72px] font-black leading-[0.82] tracking-[-0.08em] md:text-[160px]">
@@ -64,6 +58,12 @@ export default async function ProjectPage({
                 <div className="mb-2 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
                   Overview
                 </div>
+                {details ? (
+                  <div className="space-y-5 text-[16px] leading-[1.6] text-neutral-300">
+                    <p lang="ko">{details.overview[0]}</p>
+                    <p lang="en">{details.overview[1]}</p>
+                  </div>
+                ) : (
                 <p className="text-[16px] leading-[1.6] text-neutral-300">
                   원목과 스테인리스 봉으로 만든 컵홀더.
                   <br />
@@ -74,6 +74,7 @@ export default async function ProjectPage({
                   <br />
                   Material and dimensions are available on request.
                 </p>
+                )}
               </div>
 
               <div className="mb-2 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
@@ -93,18 +94,18 @@ export default async function ProjectPage({
 
                 <div className="grid grid-cols-[96px_1fr] gap-4">
                   <span className="text-neutral-500">Material</span>
-                  <span>
+                  {details ? <span>{details.material}</span> : <span>
                     wood — walnut / oak
                     <br />
                     leg — stainless / brass
                     <br />
                     (Available on request)
-                  </span>
+                  </span>}
                 </div>
 
                 <div className="grid grid-cols-[96px_1fr] gap-4">
                   <span className="text-neutral-500">Dimensions</span>
-                  <span>
+                  {details ? <span>문의 / Please inquire</span> : <span>
                     top diameter — 80mm / 175mm
                     <br />
                     bottom diameter — 200mm / 260mm
@@ -112,7 +113,7 @@ export default async function ProjectPage({
                     height — 530mm
                     <br />
                     (Available on request)
-                  </span>
+                  </span>}
                 </div>
               </div>
             </div>
@@ -123,7 +124,9 @@ export default async function ProjectPage({
               </div>
 
               <p className="mb-3 text-[16px] leading-[1.6] text-neutral-300">
-                For commissions, availability, and custom inquiries.
+                {details
+                  ? "현재 품절된 제품입니다. 제품 정보 및 재제작 가능 여부는 문의해 주세요."
+                  : "For commissions, availability, and custom inquiries."}
               </p>
 
               <p className="mb-6 text-[14px] text-neutral-500">
@@ -167,16 +170,18 @@ export default async function ProjectPage({
               </div>
 
               <p className="text-[18px] text-neutral-100">
-                Made to Order
+                {availability}
               </p>
             </div>
 
+            {!details && (
             <div className="order-3 rounded-md border border-neutral-800 p-5 md:order-none md:p-7">
               <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
               </div>
 
               <div className="overflow-hidden rounded-md border border-neutral-800">
                 <iframe
+                  title="Cupholder video"
                   src="https://www.instagram.com/reel/DZxULMwh8N4/embed"
                   width="100%"
                   frameBorder="0"
@@ -187,10 +192,18 @@ export default async function ProjectPage({
               </div>
             </div>
 
+            )}
+
             <div className="order-6 rounded-md border border-neutral-800 p-5 md:order-none md:p-7">
               <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
                 Details
               </div>
+              {details ? (
+                <div className="max-w-2xl space-y-5 text-[16px] leading-[1.6] text-neutral-300 md:text-[18px]">
+                  <p lang="ko">{details.details[0]}</p>
+                  <p lang="en">{details.details[1]}</p>
+                </div>
+              ) : (
               <p className="max-w-2xl text-[16px] leading-[1.6] text-neutral-300 md:text-[18px]">
                 원목과 금속의 대비를 중심으로 제작한 2way 컵홀더입니다.
                 <br />
@@ -201,6 +214,7 @@ export default async function ProjectPage({
                 <br />
                 Its proportions and balance are designed to support a range of uses.
               </p>
+              )}
             </div>
           </div>
         </div>

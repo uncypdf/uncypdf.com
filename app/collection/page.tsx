@@ -117,10 +117,6 @@ function CollectionCard({
     </>
   );
 
-  if (isSoldOut) {
-    return <div className="group block cursor-not-allowed">{cardContent}</div>;
-  }
-
   return (
     <Link href={`/collection/${work.slug}`} className="group block">
       {cardContent}
