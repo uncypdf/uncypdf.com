@@ -26,7 +26,7 @@ export default async function ProjectPage({
   }
 
   const details = productDetails[slug];
-  const availability = details ? "Sold Out" : "Made to Order";
+  const availability = "Made to Order";
   const galleryImages = details?.images ?? [
     "/collection/cupholder/01.png",
     "/collection/cupholder/02.png",
@@ -125,7 +125,7 @@ export default async function ProjectPage({
 
               <p className="mb-3 text-[16px] leading-[1.6] text-neutral-300">
                 {details
-                  ? "현재 품절된 제품입니다. 제품 정보 및 재제작 가능 여부는 문의해 주세요."
+                  ? "주문 제작 가능한 제품입니다. 제작 일정과 제품 정보는 문의해 주세요."
                   : "For commissions, availability, and custom inquiries."}
               </p>
 

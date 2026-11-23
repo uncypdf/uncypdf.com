@@ -71,8 +71,6 @@ function CollectionCard({
     damping: 20,
   });
 
-  const isSoldOut = work.slug !== "cupholder";
-
   const cardContent = (
     <>
       <motion.div
@@ -111,7 +109,7 @@ function CollectionCard({
         </h2>
 
         <div className="mt-1 text-[11px] uppercase tracking-[0.15em] text-neutral-500">
-          {isSoldOut ? "Sold Out" : "Made to Order"}
+          Made to Order
         </div>
       </div>
     </>
