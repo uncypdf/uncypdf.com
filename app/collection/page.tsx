@@ -19,21 +19,21 @@ const works = [
     title: "pyramid",
     year: "2025",
     category: "coffee table",
-    thumbnail: "/archive/1.png",
+    thumbnail: "/collection/green/1.jpg",
   },
   {
     slug: "flower-vase",
     title: "flower vase",
     year: "2026",
     category: "vase",
-    thumbnail: "/archive/3.png",
+    thumbnail: "/collection/green/3.jpg",
   },
   {
     slug: "bookstand",
     title: "bookstand",
     year: "2025",
     category: "furniture",
-    thumbnail: "/archive/4.png",
+    thumbnail: "/collection/green/4.jpg",
   },
 ];
 
