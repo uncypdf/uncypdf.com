@@ -118,7 +118,7 @@ function CollectionCard({
   );
 
   if (isSoldOut) {
-    return <div className="group block cursor-not-allowed opacity-45">{cardContent}</div>;
+    return <div className="group block cursor-not-allowed">{cardContent}</div>;
   }
 
   return (
