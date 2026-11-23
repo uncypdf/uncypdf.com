@@ -27,6 +27,8 @@ export default async function ProjectPage({
 
   const details = productDetails[slug];
   const availability = "Made to Order";
+  const reelId = slug === "cupholder" ? "DZxULMwh8N4"
+    : slug === "flower-vase" ? "DRt9uyBEmk3" : null;
   const galleryImages = details?.images ?? [
     "/collection/cupholder/01.png",
     "/collection/cupholder/02.png",
@@ -174,15 +176,15 @@ export default async function ProjectPage({
               </p>
             </div>
 
-            {!details && (
+            {reelId && (
             <div className="order-3 rounded-md border border-neutral-800 p-5 md:order-none md:p-7">
               <div className="mb-4 text-[11px] uppercase tracking-[0.2em] text-neutral-500">
               </div>
 
               <div className="overflow-hidden rounded-md border border-neutral-800">
                 <iframe
-                  title="Cupholder video"
-                  src="https://www.instagram.com/reel/DZxULMwh8N4/embed"
+                  title={`${project.title} video`}
+                  src={`https://www.instagram.com/reel/${reelId}/embed`}
                   width="100%"
                   frameBorder="0"
                   scrolling="no"
