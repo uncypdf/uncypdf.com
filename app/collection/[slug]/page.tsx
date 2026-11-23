@@ -28,7 +28,8 @@ export default async function ProjectPage({
   const details = productDetails[slug];
   const availability = "Made to Order";
   const reelId = slug === "cupholder" ? "DZxULMwh8N4"
-    : slug === "flower-vase" ? "DRt9uyBEmk3" : null;
+    : slug === "flower-vase" ? "DRt9uyBEmk3"
+    : slug === "pyramid" ? "DH0eb4mP1fq" : null;
   const galleryImages = details?.images ?? [
     "/collection/cupholder/01.png",
     "/collection/cupholder/02.png",
